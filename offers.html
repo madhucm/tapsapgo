@@ -4,8 +4,23 @@
     <title></title>
 	<meta charset="utf-8" />
     <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+          
+        }
 
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
     </style>
+
 </head>
 <body >
     <div  ng-controller="customersCtrl">
@@ -13,15 +28,18 @@
             <form id="search">
                 
             </form>
-            <table>
-                <th>
-                    Offers Name
-                </th>
-                <th>Aditional Details</th>
+            <table  style="width:100%">
+              <tr>
+                  <th>
+                      Offers available
+                  </th>
+                  <th>Details</th>
+              </tr>
                 <tr ng-repeat="x in names">
-                    <td ng-model="offName"><input id="searchInput" ng-model="tagInput" ng-change="addTag()" placeholder="{{ x.Name }}"></td>
-                    <td>{{ x.price }}</td>
-                    <td><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Edit</button></td>
+                    <td ng-model="offName"><div id="searchInput" ng-model="tagInput">{{ x.offerName }} </div></td>
+                    <td>{{ x.Offerdescription }}</td>
+                    <td><button class="btn btn-default">Edit</button></td>
+
                 </tr>
             </table>
         </div>
