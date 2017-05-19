@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+    </style>
+</head>
+<body>
+    <div ng-controller="customersCtrl">
+        <div class="row">
+            <form id="search"></form>
+            <table>
+                <th>
+                    Product Name
+                </th>
+                <th>Product Description</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th>Unit Sold</th>
+                <tr ng-repeat="x in names">
+                    <td>
+                        <div id="searchInput" ng-model="tagInput">{{x.name}}</div>
+                    </td> 
+                    <td>{{ x.description }}</td>
+                    <td>{{ x.price }}</td>
+                    <td>{{ x.currentStock }}</td>
+                    <td>{{ x.totalUnitsSold }}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="row center">
+            <div id="tagContainer" ng-repeat="tag in tagList">
+                {{tag}}
+            </div>
+        </div>
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <div ng-bind="offName">{{offName}}</div>
+                    </div>
+                    <div class="modal-body">
+                        <p>Some offer Fields</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

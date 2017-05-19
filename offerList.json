@@ -1,0 +1,59 @@
+﻿
+{
+  "offerList": [
+    {
+      "id": 1,
+      "name": "Parle-G",
+      "description": "Buiscuit",
+      "category": null,
+      "price": 10.0,
+      "currentStock": 20,
+      "totalUnitsSold": 10
+    },
+    {
+      "id": 2,
+      "name": "Monaco",
+      "description": "Buiscuit",
+      "category": null,
+      "price": 10.0,
+      "currentStock": 20,
+      "totalUnitsSold": 10
+    },
+    {
+      "id": 3,
+      "name": "Hide n seek",
+      "description": "Buiscuit",
+      "category": null,
+      "price": 24.0,
+      "currentStock": 20,
+      "totalUnitsSold": 10
+    },
+    {
+      "id": 4,
+      "name": "Milano",
+      "description": "Buiscuit",
+      "category": null,
+      "price": 10.0,
+      "currentStock": 20,
+      "totalUnitsSold": 10
+    },
+    {
+      "id": 5,
+      "name": "KrackJack",
+      "description": "Buiscuit",
+      "category": null,
+      "price": 15.0,
+      "currentStock": 20,
+      "totalUnitsSold": 10
+    },
+    {
+    "id" : 6,
+    "name" : "Sixers",
+    "description" : "Buiscuit",
+    "category" : null,
+    "price" : 35.0,
+    "currentStock" : 20,
+    "totalUnitsSold" : 10
+  }
+  ]
+}
